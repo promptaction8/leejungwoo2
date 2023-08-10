@@ -1,0 +1,310 @@
+* {
+    margin: 0; /* 여백 없애기 */
+    padding: 0; /* 여백 없애기 */
+}
+
+body {
+    display: flex; /* flex 형태로 만들기 */
+    flex-direction: column; /* 세로로 정렬 */
+    align-items: center; /* flex-direction 방향의 수직축 가운데 정렬 */
+    justify-content: center; /* flex-direction 방향의 수평축 가운데 정렬 */
+    height: 100vh; /* 세로를 화면 전체로 채우기 */
+}
+
+.top_container {
+    display: flex; /* flex 형태로 만들기 */
+    flex-direction: row; /* 가로로 정렬 */
+    align-items: center; /* flex-direction 방향의 수직축 가운데 정렬 */
+    justify-content: center; /* flex-direction 방향의 수평축 가운데 정렬 */
+    width: 100%;
+    height: 64px;
+    background-color: #d5c4fb;
+    border-bottom: 1px solid black;
+}
+
+.bottom_container {
+    display: flex; /* flex 형태로 만들기 */
+    flex-direction: row; /* 가로로 정렬 */
+    align-items: center; /* flex-direction 방향의 수직축 가운데 정렬 */
+    justify-content: center; /* flex-direction 방향의 수평축 가운데 정렬 */
+    width: 100%;
+    flex: 1;
+    background-color: white;
+    color: black;
+    font-size: medium;
+}
+
+.menu1 {
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu1 p {
+    margin: 0 10px;
+}
+
+
+.search {
+    position: relative;
+    width: 40%;
+}
+
+input {
+    width: 200px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+
+
+.left  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right {
+    margin-left: 200px;
+}
+
+
+.menu2 {
+    width: 220px;
+    height: 100%;
+    background-color: #f3f1f1;
+}
+
+
+.name {
+    color: lightslategray;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+}
+
+.follow {
+    font-size: smaller;
+    color: rgb(101, 100, 100);
+    margin-left: 10px;
+}
+
+.button {
+    width:70%;
+    margin-left: 10px;
+    background-color: #eae2f9;
+    border-color: white;
+    padding: 2px;
+    margin: 4px;
+    margin-left: 20px;
+}
+
+.button2 {
+    width:70%;
+    margin-left: 10px;
+    background-color: #ded3f5;
+    border-radius: 6px;
+    border-color: white;
+}
+
+
+.report_link {
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+}
+
+
+
+.komi {
+    border-radius: 70px;
+    -moz-border-radius: 70px;
+    -khtml-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+
+.recommend {
+    width: 90%;
+    height: 70%;
+    justify-self: center;
+    justify-items: center;
+}
+
+.recommend div {
+    width: 95%;
+    height: 40px;
+    border: 1px solid #9675de;
+    background-color: #eeeaf7;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    border-radius: 7px;
+}
+
+
+.recommend button {
+    width: 95%;
+    height: 40px;
+    border-radius: 6px;
+    border-color: white;
+    background-color: #eeeaf7;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.recommend p {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+
+
+
+.menu3 {
+    flex: 1;
+    height: 100%;
+    font-size: small;
+}
+
+.category {
+    font-size: x-large;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.category2 {
+    font-size: small;
+    margin-left: 20px;
+}
+
+.lists {
+    margin-top: 2px;
+    height: 40px;
+    border-bottom: 1px solid black;
+    font-size: large;
+    margin-bottom: 2px;
+    justify-content: space-between;
+
+}
+
+.lists li {
+    font-size: smaller;
+
+}
+
+.menu4 {
+    width: 150px;
+    height: 100%;
+}
+
+.menu4 div {
+    padding: 40px;
+    width: 25%;
+    height: 20vh;
+    position: sticky;
+    top: 10%;
+    text-align: left;
+}
+
+.box_container {
+    border-top: 1px solid #010409;
+    display: flex;
+    border-color: black;
+    height: 60%;
+    padding: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+
+.box_container div{
+    width: 40%;
+    height: 100px;
+    border-top: 1px solid #A178FA;
+    border-bottom: 1px solid #A178FA;
+    border-radius: 3px;
+    text-align: right;
+    padding: 0.7em;
+    font-size: small;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-basis: 1 1 40%;
+}
+
+
+.p_category {
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+
+.box_container2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    height: 60%;
+    justify-content: center;
+}
+
+.box_container2 h1 {
+    font-size: xx-large;
+    color: #A178FA;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box_container2 p {
+    align-self: center;
+
+}
+
+.box_container3 {
+    border: 2px solid #010409;
+    display: flex;
+    border-color: bisque;
+    border-radius: 7px;
+    height: 60%;
+}
+
+.search {
+    position: relative;
+    width: 30px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+/* link: 아직 방문 안한 링크 글자색,  */
+/* visited: 방문한 적 있는 링크의 글자색
+/* hover :마우스에 링크를 올려두었을 때의 글자색 */
+/* active : 링크를 클릭하고 땔 떄까지의 글자색 */
+a:link {
+    color : rgb(4, 0, 1);
+}
+a:visited {
+    color : black;
+}
+a:hover {
+    color : red;
+}
+a:active {
+    color : green
+}
